@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Login Screen Tutorial</title>
+    <style>
+        body {
+            background-color: #328f8a;
+            background-image: linear-gradient(45deg, #328f8a, #08ac4b);
+            font-family: "Roboto", sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .login-page {
+            margin: auto;
+            padding: 8% 0 0;
+            width: 360px;
+        }
+
+        .form {
+            background: #FFFFFF;
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+            margin: 0 auto 100px;
+            max-width: 360px;
+            padding: 45px;
+            position: relative;
+            text-align: center;
+            z-index: 1;
+        }
+
+        .form input {
+            background: #f2f2f2;
+            border: 0;
+            box-sizing: border-box;
+            font-family: "Roboto", sans-serif;
+            font-size: 14px;
+            margin: 0 0 15px;
+            outline: 0;
+            padding: 15px;
+            width: 100%;
+        }
+
+        .form button {
+            background-color: #328f8a;
+            background-image: linear-gradient(45deg, #328f8a, #08ac4b);
+            border: 0;
+            color: #FFFFFF;
+            cursor: pointer;
+            font-family: "Roboto", sans-serif;
+            font-size: 14px;
+            outline: 0;
+            padding: 15px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        .form button:hover {
+            background-color: #43A047;
+        }
+
+        .login-header {
+            margin-bottom: 26px;
+            margin-top: -31px;
+        }
+
+        .login .message {
+            color: #b3b3b3;
+            font-size: 12px;
+            margin: 15px 0 0;
+        }
+
+        .login .message a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-page">
+        <div class="form">
+            <div class="login">
+                <div class="login-header">
+                    <h3>LOGIN</h3>
+                    <p>Please enter your credentials to login.</p>
+                </div>
+            </div>
+            <form class="login-form" action="http://127.0.0.1:5500/dsa.html">
+              <input type="text" placeholder="username" id="username">
+              <input type="password" placeholder="password" id="password">
+              <button type="submit">login</button>
+              <p class="message">Not registered? <a href="#">Create an account</a></p>
+          </form>
+          
+        </div>
+    </div>
+
+</body>
+
+</html>
